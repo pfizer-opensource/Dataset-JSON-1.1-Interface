@@ -1,25 +1,14 @@
 import flask
 from flask import render_template, request, send_file, jsonify
-import pprint
-import openpyxl
 import json
 import os
 import io
 import pandas as pd
-import paramiko
-import pathlib
-import pyreadstat
-import shutil
 import time
 import warnings
 import xport
-import zipfile
 import xpt_to_json
 from xpt_to_json import *
-
-from office365.runtime.auth.authentication_context import AuthenticationContext
-from office365.sharepoint.client_context import ClientContext
-from office365.sharepoint.files.file import File
 
 warnings.filterwarnings("ignore")
 app = flask.Flask(__name__)
@@ -72,7 +61,6 @@ def generate_target_file():
 @app.route("/generate_target_file/JSONfile.html")
 def JSONfile():
     data_d = {key: dict_[key] for key in ["rows"]}
-    # data_f = pprint.pformat(dict_)
     return render_template("JSONfile.html", title="JSON file", jsonfile=data_d)
 
 
