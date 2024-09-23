@@ -1,3 +1,4 @@
+[project]
 name = "Dataset-JSON-1-1-Interface"
 version = "0.1.0"
 description = "A project for interfacing with Dataset JSON 1.1"
