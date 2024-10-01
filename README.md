@@ -8,7 +8,7 @@ To use this tool follow the below steps:
 3. Open the folder that has the codebase in the IDE
 4. You can install the packages by either of the following commands in terminal:
 
-   pip install <package_name> == <version>
+   pip install <package_name==version>
    (or) pip install -r requirements.txt
    
 5. Once all packages are installed, run the following command:
