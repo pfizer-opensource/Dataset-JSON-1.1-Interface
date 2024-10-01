@@ -11,8 +11,10 @@ To use this tool follow the below steps:
    pip install <package_name==version>
    (or) pip install -r requirements.txt
    
-5. Once all packages are installed, run the following command:
+5. Once all packages are installed, run the following command
+
    python app.py
+   
    This will open local host window on your browser, where you can upload the XPT file and get it converted to either JSON or NDJSON.
    
 <img width="946" alt="image" src="https://github.com/user-attachments/assets/59667c15-942e-4bcc-bc9a-d9a0609e13f9">
